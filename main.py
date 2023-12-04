@@ -39,7 +39,7 @@ class QualityLevel2(Quality):
         # получение Q
         q_value = super().calculate_quality()
 
-        # Проверка на оплетку
+        # Проверка на оплеткуgi
         if self.has_braid:
             return 2 * q_value if q_value is not None else None
         else:
